@@ -30,6 +30,8 @@ body{
   gap: 1.25rem;
 }
 
+/* Slider images */
+
 .slider__items-cover{
   order: 1;
   width: 100%;
@@ -132,4 +134,31 @@ body{
 
 .button_5:checked ~ .slider__controls .slider__buton-cover:nth-child(5):hover .slider__button{
   background-color: #fff;
+}
+
+/* Mems */
+
+.slider__mems-cover {
+  order: 2;
+  display:block ;
+  max-width: 30rem;
+  overflow: hidden;
+}
+
+.slider__mems {
+  display: flex;
+  flex-direction: row;
+  width: 500%;
+}
+
+.slider__mem {
+  width: 20%;
+  padding-left: 0.3125rem;
+  transition: 0.7s;
+}
+
+.mem__text {
+  font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+  font-size: 0.8rem;
+  color: #fff;
 }
