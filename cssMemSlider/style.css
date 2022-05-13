@@ -202,3 +202,46 @@ body{
 .button_5:checked ~ .slider__mems-cover .slider__mems .slider__mem-1 {
   margin-left: -80%;
 }
+
+@media (max-width: 674px) {
+
+  .slider {
+    flex-direction: column;
+  }
+
+  .slider__controls {
+    align-self: center;
+    order: 2;
+  }
+  
+  .slider__mems-cover {
+    order: 3;
+  }
+
+}
+
+
+@media (max-width: 470px) {
+  .wrapper {
+    padding: 0 0.625rem;
+  }
+
+  .slider__buton-cover {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .slider__button{
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .slider__mems-cover {
+    max-width: 18.75rem;
+  }
+
+  .mem__text {
+    font-size: 0.6rem;
+  }
+
+}
