@@ -24,7 +24,7 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 50rem;
+  max-width: 40rem;
   overflow: hidden;
   height: auto;
   gap: 1.25rem;
@@ -33,27 +33,103 @@ body{
 .slider__items-cover{
   order: 1;
   width: 100%;
+  max-width: 40rem;
+  overflow: hidden;
   height: auto;
 }
 
 .slider__items {
   display: flex;
-  width: 400%;
+  width: 500%;
   height: 100%;
+}
+
+.slider__item {
+  display: flex;
+  width: 20%;
+  transition: 0.7s;
+}
+
+.slider__image {
+  max-width: 100%;
+  height: auto;
 }
 
 .slider__dot{
   display: none;
 }
 
-.slider__item {
+/* Controls */
+
+.slider__controls {
   display: flex;
-  width: 25%;
-  transition: 0.7s;
+  order: 3;
+  flex-direction: row;
+  gap: 0.3rem;
 }
 
+.slider__buton-cover {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: all 0.25s ease-in-out;
+}
 
-.slider__image {
-  max-width: 100%;
-  height: auto;
+.slider__button{
+  width: 0.875rem;
+  height: 0.875rem;
+  border: 0.16rem solid #71ABFF;
+  border-radius: 50%;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_1:checked ~  .slider__controls .slider__buton-cover:nth-child(1) .slider__button{
+  background-color: #71ABFF;
+}
+
+.button_2:checked ~ .slider__controls .slider__buton-cover:nth-child(2) .slider__button{
+  background-color: #71ABFF;
+}
+
+.button_3:checked ~ .slider__controls .slider__buton-cover:nth-child(3) .slider__button{
+  background-color: #71ABFF;
+}
+
+.button_4:checked ~ .slider__controls .slider__buton-cover:nth-child(4) .slider__button{
+  background-color: #71ABFF;
+}
+
+.button_5:checked ~ .slider__controls .slider__buton-cover:nth-child(5) .slider__button{
+  background-color: #71ABFF;
+}
+
+.slider__buton-cover:hover .slider__button {
+  border: 0.16rem solid #fff;
+}
+
+.button_1:checked ~ .slider__controls .slider__buton-cover:nth-child(1):hover .slider__button{
+  background-color: #fff;
+}
+
+.button_2:checked ~ .slider__controls .slider__buton-cover:nth-child(2):hover .slider__button{
+  background-color: #fff;
+}
+
+.button_3:checked ~ .slider__controls .slider__buton-cover:nth-child(3):hover .slider__button{
+  background-color: #fff;
+}
+
+.button_4:checked ~ .slider__controls .slider__buton-cover:nth-child(4):hover .slider__button{
+  background-color: #fff;
+}
+
+.button_5:checked ~ .slider__controls .slider__buton-cover:nth-child(5):hover .slider__button{
+  background-color: #fff;
 }
